@@ -184,7 +184,9 @@ Retrieved bucket information:
 Verified bucket appears in S3 console with correct configuration.
 
 ### Bucket Properties
-![Bucket Properties](screenshots/bucket-properties.png)
+![Bucket Properties](screenshots/bucket-properties-versioning.png)
+![Bucket Properties](screenshots/bucket-properties-encryption.png)
+![Bucket Properties](screenshots/bucket-properties-publicaccess.png)
 
 Confirmed:
 - ✅ Versioning enabled
@@ -202,7 +204,7 @@ Verified lifecycle rule is active with correct transitions.
 ![File Upload](screenshots/file-upload-test.png)
 ```bash
 # Create a test file
-echo "Hello from Week 4!" > sample-files/test.txt
+echo "Hello from Week 4 Cloud Storage Project!" > sample-files/test.txt
 
 # Upload to S3
 aws s3 cp sample-files/test.txt s3://YOUR-BUCKET-NAME/
@@ -266,10 +268,3 @@ aws s3 rm s3://YOUR-BUCKET-NAME --recursive
 # Then destroy
 terraform destroy
 ```
-
----
-
-**Author:** [Your Name]  
-**Date:** December 2024  
-**Part of:** 12-Week Cloud Computing Project Challenge  
-**Repository:** [GitHub Link]
